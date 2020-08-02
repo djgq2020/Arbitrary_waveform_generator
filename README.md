@@ -1,3 +1,7 @@
+---
+typora-root-url: images
+---
+
 # Arbitrary_waveform_generator
 2020 Xilinx summer school
 
@@ -42,4 +46,4 @@
 
 ## 作品照片
 
-![IMG_20200801_202351](C:\Users\Dj\Desktop\Arbitrary_waveform_generator\images\IMG_20200801_202351.jpg)
+[](https://github.com/djgq2020/Arbitrary_waveform_generator/blob/master/images/IMG_20200801_202351.jpg)
