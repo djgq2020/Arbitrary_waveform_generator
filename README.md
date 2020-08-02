@@ -46,4 +46,4 @@ typora-root-url: images
 
 ## 作品照片
 
-[](https://github.com/djgq2020/Arbitrary_waveform_generator/blob/master/images/IMG_20200801_202351.jpg)
+![](/作品.jpg)
