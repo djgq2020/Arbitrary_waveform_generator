@@ -1,0 +1,1791 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 9900
+License: Customer
+
+Current time: 	Sat Aug 01 02:54:16 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 109 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	fan
+User home directory: C:/Users/fan
+User working directory: C:/Users/fan/Desktop/summer_school/wave
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/fan/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/fan/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/fan/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/fan/Desktop/summer_school/wave/vivado.log
+Vivado journal file location: 	C:/Users/fan/Desktop/summer_school/wave/vivado.jou
+Engine tmp dir: 	C:/Users/fan/Desktop/summer_school/wave/.Xil/Vivado-9900-DESKTOP-OS30GQN
+
+Xilinx Environment Variables
+----------------------------
+ALTERAOCLSDKROOT: D:\altera\13.1\hld
+INTELFPGAOCLSDKROOT: C:\intelFPGA\18.1\hld
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 535 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 88 MB (+89977kb) [00:00:14]
+// [Engine Memory]: 531 MB (+405805kb) [00:00:14]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\fan\Desktop\summer_school\wave\wave.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/fan/Desktop/summer_school/wave/wave.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 41 MB. Current time: 8/1/20, 2:54:18 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+6997kb) [00:00:29]
+// [Engine Memory]: 691 MB (+139144kb) [00:00:29]
+// WARNING: HEventQueue.dispatchEvent() is taking  5126 ms.
+// Tcl Message: open_project C:/Users/fan/Desktop/summer_school/wave/wave.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Dj/Desktop/A/wave' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 746 MB (+21507kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 773.309 ; gain = 199.559 
+// HMemoryUtils.trashcanNow. Engine heap size: 865 MB. GUI used memory: 51 MB. Current time: 8/1/20, 2:54:35 AM CST
+// Project name: wave; location: C:/Users/fan/Desktop/summer_school/wave; part: xc7z010clg400-1
+// [Engine Memory]: 865 MB (+85732kb) [00:00:36]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+// PAPropertyPanels.initPanels (DDS.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("DDS.v", 52, 226); // cl (w, cp)
+selectCodeEditor("DDS.v", 52, 226, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 49, 236); // cl (w, cp)
+selectCodeEditor("DDS.v", 49, 236, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 36, 239); // cl (w, cp)
+selectCodeEditor("DDS.v", 32, 218); // cl (w, cp)
+selectCodeEditor("DDS.v", 35, 218, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 61, 217); // cl (w, cp)
+selectCodeEditor("DDS.v", 61, 217, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 54, 236); // cl (w, cp)
+selectCodeEditor("DDS.v", 54, 236, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 56, 256); // cl (w, cp)
+selectCodeEditor("DDS.v", 56, 256, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 62, 277); // cl (w, cp)
+selectCodeEditor("DDS.v", 61, 277, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 55, 293); // cl (w, cp)
+selectCodeEditor("DDS.v", 54, 293, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 57, 307); // cl (w, cp)
+selectCodeEditor("DDS.v", 57, 307, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 126, 163); // cl (w, cp)
+selectCodeEditor("DDS.v", 125, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 119, 189); // cl (w, cp)
+selectCodeEditor("DDS.v", 119, 189, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 124, 206); // cl (w, cp)
+selectCodeEditor("DDS.v", 124, 206, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 125, 224); // cl (w, cp)
+selectCodeEditor("DDS.v", 125, 224, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 125, 244); // cl (w, cp)
+selectCodeEditor("DDS.v", 125, 244, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 122, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 122, 160, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 133, 185); // cl (w, cp)
+selectCodeEditor("DDS.v", 133, 185, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 125, 206); // cl (w, cp)
+selectCodeEditor("DDS.v", 125, 206, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 123, 216); // cl (w, cp)
+selectCodeEditor("DDS.v", 123, 216, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 124, 240); // cl (w, cp)
+selectCodeEditor("DDS.v", 124, 240, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 124, 253); // cl (w, cp)
+selectCodeEditor("DDS.v", 124, 253, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 136, 128); // cl (w, cp)
+selectCodeEditor("DDS.v", 136, 128, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 128, 163); // cl (w, cp)
+selectCodeEditor("DDS.v", 128, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("DDS.v", 113, 216); // cl (w, cp)
+selectCodeEditor("DDS.v", 75, 179); // cl (w, cp)
+selectCodeEditor("DDS.v", 75, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 204, 183); // cl (w, cp)
+selectCodeEditor("DDS.v", 204, 183, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("DDS.v", 16, 182); // cl (w, cp)
+selectCodeEditor("DDS.v", 11, 181); // cl (w, cp)
+selectCodeEditor("DDS.v", 11, 181, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 59, 206); // cl (w, cp)
+selectCodeEditor("DDS.v", 59, 206, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 66, 221); // cl (w, cp)
+selectCodeEditor("DDS.v", 66, 221, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 67, 231); // cl (w, cp)
+selectCodeEditor("DDS.v", 67, 231, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 62, 290); // cl (w, cp)
+selectCodeEditor("DDS.v", 62, 290, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 69, 317); // cl (w, cp)
+selectCodeEditor("DDS.v", 69, 317, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 73, 336); // cl (w, cp)
+selectCodeEditor("DDS.v", 73, 336, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 88, 290); // cl (w, cp)
+selectCodeEditor("DDS.v", 88, 290, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 397, 158); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 183, 213); // cl (w, cp)
+selectCodeEditor("DDS.v", 104, 165); // cl (w, cp)
+selectCodeEditor("DDS.v", 104, 165, false, false, false, false, true); // cl (w, cp) - Double Click
+// [GUI Memory]: 104 MB (+127kb) [00:02:27]
+selectCodeEditor("DDS.v", 1, 179); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 162, 190); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 233); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 233, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 112, 159); // cl (w, cp)
+selectCodeEditor("DDS.v", 112, 159, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 176, 165); // cl (w, cp)
+selectCodeEditor("DDS.v", 176, 165, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("DDS.v", 221, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 75, 161); // cl (w, cp)
+selectCodeEditor("DDS.v", 76, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 205, 158); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("DDS.v", 263, 67); // cl (w, cp)
+selectCodeEditor("DDS.v", 233, 159); // cl (w, cp)
+selectCodeEditor("DDS.v", 236, 158); // cl (w, cp)
+selectCodeEditor("DDS.v", 247, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 247, 160, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 331, 161); // cl (w, cp)
+selectCodeEditor("DDS.v", 331, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 111 MB (+1902kb) [00:03:58]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run Square_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run Triangle_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run Sin_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run sawtooth_synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Square'... 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Triangle'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Sin'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sawtooth'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 02:58:21 2020] Launched Square_synth_1, Triangle_synth_1, Sin_synth_1, sawtooth_synth_1, synth_1... Run output will be captured here: Square_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/Square_synth_1/runme.log Triangle_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/Triangle_synth_1/runme.log Sin_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/Sin_synth_1/runme.log sawtooth_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/sawtooth_synth_1/runme.log synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 02:58:22 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 985.371 ; gain = 0.000 
+// Elapsed time: 18 seconds
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 470ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 118 MB (+1144kb) [00:07:25]
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 369 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1280 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 985.371 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279573128A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 1,709 MB (+839924kb) [00:10:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  3379 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1782.680 ; gain = 797.309 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// Elapsed time: 14 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,766 MB. GUI used memory: 64 MB. Current time: 8/1/20, 3:04:53 AM CST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 148 seconds
+selectCodeEditor("DDS.v", 178, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 178, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 182, 121); // cl (w, cp)
+selectCodeEditor("DDS.v", 192, 119); // cl (w, cp)
+selectCodeEditor("DDS.v", 193, 121); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("DDS.v", 122, 89); // cl (w, cp)
+selectCodeEditor("DDS.v", 122, 89, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 183, 85); // cl (w, cp)
+selectCodeEditor("DDS.v", 183, 85, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("DDS.v", 286, 90); // cl (w, cp)
+selectCodeEditor("DDS.v", 286, 90, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("DDS.v", 101, 203); // cl (w, cp)
+selectCodeEditor("DDS.v", 101, 203, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 165, 203); // cl (w, cp)
+selectCodeEditor("DDS.v", 165, 203, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 53, 181); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 1, 203); // cl (w, cp)
+selectCodeEditor("DDS.v", 84, 197); // cl (w, cp)
+selectCodeEditor("DDS.v", 84, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 142, 199); // cl (w, cp)
+selectCodeEditor("DDS.v", 142, 199, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 212, 204); // cl (w, cp)
+selectCodeEditor("DDS.v", 212, 204, false, false, false, false, true); // cl (w, cp) - Double Click
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("DDS.v", 130, 123); // cl (w, cp)
+selectCodeEditor("DDS.v", 130, 123, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 192, 123); // cl (w, cp)
+selectCodeEditor("DDS.v", 181, 128); // cl (w, cp)
+selectCodeEditor("DDS.v", 191, 149); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 191, 122); // cl (w, cp)
+selectCodeEditor("DDS.v", 191, 122, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 121, 242); // cl (w, cp)
+selectCodeEditor("DDS.v", 121, 242, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("DDS.v", 220, 82); // cl (w, cp)
+selectCodeEditor("DDS.v", 210, 108); // cl (w, cp)
+selectCodeEditor("DDS.v", 332, 86); // cl (w, cp)
+selectCodeEditor("DDS.v", 332, 86, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("DDS.v", 53, 86); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("DDS.v", 249, 197); // cl (w, cp)
+selectCodeEditor("DDS.v", 249, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 8, 88); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("DDS.v", 81, 102); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 35, 102); // cl (w, cp)
+selectCodeEditor("DDS.v", 74, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 103, 105); // cl (w, cp)
+selectCodeEditor("DDS.v", 103, 105, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 129, 103); // cl (w, cp)
+selectCodeEditor("DDS.v", 237, 217); // cl (w, cp)
+selectCodeEditor("DDS.v", 133, 104); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 142, 102); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("DDS.v", 108, 100); // cl (w, cp)
+selectCodeEditor("DDS.v", 108, 100, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 104, 142); // cl (w, cp)
+selectCodeEditor("DDS.v", 105, 102); // cl (w, cp)
+selectCodeEditor("DDS.v", 105, 102, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 141, 107); // cl (w, cp)
+selectCodeEditor("DDS.v", 141, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 191, 103); // cl (w, cp)
+selectCodeEditor("DDS.v", 191, 103, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 245, 98); // cl (w, cp)
+selectCodeEditor("DDS.v", 246, 35); // cl (w, cp)
+selectCodeEditor("DDS.v", 224, 103); // cl (w, cp)
+selectCodeEditor("DDS.v", 166, 173); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 29, 179); // cl (w, cp)
+selectCodeEditor("DDS.v", 29, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 92, 181); // cl (w, cp)
+selectCodeEditor("DDS.v", 92, 181, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 28, 214); // cl (w, cp)
+selectCodeEditor("DDS.v", 28, 214, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 92, 221); // cl (w, cp)
+selectCodeEditor("DDS.v", 92, 221, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 223, 215); // cl (w, cp)
+selectCodeEditor("DDS.v", 249, 218); // cl (w, cp)
+selectCodeEditor("DDS.v", 233, 221); // cl (w, cp)
+selectCodeEditor("DDS.v", 299, 141); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 03:12:21 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 03:12:21 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectCodeEditor("DDS.v", 176, 220); // cl (w, cp)
+selectCodeEditor("DDS.v", 177, 221, false, false, false, false, true); // cl (w, cp) - Double Click
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1135 ms. Increasing delay to 3405 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 410 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("DDS.v", 478, 120); // cl (w, cp)
+selectCodeEditor("DDS.v", 100, 216); // cl (w, cp)
+selectCodeEditor("DDS.v", 100, 216, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 174, 216); // cl (w, cp)
+selectCodeEditor("DDS.v", 174, 216, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("DDS.v", 243, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 241, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 245, 160); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 125 MB (+854kb) [00:26:33]
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Aug  1 03:20:33 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 03:20:33 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 622 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("DDS.v", 34, 108); // cl (w, cp)
+selectCodeEditor("DDS.v", 34, 108, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 175, 108); // cl (w, cp)
+selectCodeEditor("DDS.v", 175, 108, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 117, 107); // cl (w, cp)
+selectCodeEditor("DDS.v", 117, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 180, 106); // cl (w, cp)
+selectCodeEditor("DDS.v", 180, 106, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 110, 107); // cl (w, cp)
+selectCodeEditor("DDS.v", 110, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 65 MB. Current time: 8/1/20, 3:34:53 AM CST
+// Elapsed time: 530 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 563 seconds
+selectCodeEditor("DDS.v", 310, 131); // cl (w, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aF, cp)
+selectCodeEditor("DDS.v", 161, 328); // cl (w, cp)
+selectCodeEditor("DDS.v", 161, 328, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectCodeEditor("DDS.v", 247, 411); // cl (w, cp)
+selectCodeEditor("DDS.v", 170, 349); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("DDS.v", 342, 251); // cl (w, cp)
+selectCodeEditor("DDS.v", 107, 254); // cl (w, cp)
+selectCodeEditor("DDS.v", 111, 215); // cl (w, cp)
+selectCodeEditor("DDS.v", 27, 235); // cl (w, cp)
+selectCodeEditor("DDS.v", 27, 235, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 243, 346); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 106, 245); // cl (w, cp)
+selectCodeEditor("DDS.v", 53, 273); // cl (w, cp)
+selectCodeEditor("DDS.v", 53, 273, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 189 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aF, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// Tcl Message: close_hw 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Close Hardware Manager"); // bx (cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("DDS.v", 83, 331); // cl (w, cp)
+selectCodeEditor("DDS.v", 58, 352); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("DDS.v", 387, 439); // cl (w, cp)
+selectCodeEditor("DDS.v", 25, 502); // cl (w, cp)
+selectCodeEditor("DDS.v", 2, 504); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 15, 261); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("DDS.v", 9, 255); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 39, 273); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("DDS.v", 174, 302); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("DDS.v", 0, 199); // cl (w, cp)
+selectCodeEditor("DDS.v", 0, 229); // cl (w, cp)
+selectCodeEditor("DDS.v", 0, 229, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 78, 238); // cl (w, cp)
+selectCodeEditor("DDS.v", 14, 232, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("DDS.v", 25, 226); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DDS.v", 222, 198); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("DDS.v", 190, 253); // cl (w, cp)
+selectCodeEditor("DDS.v", 190, 253, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 88, 64); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 87); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 87, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 104); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 104, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 122); // cl (w, cp)
+selectCodeEditor("DDS.v", 97, 122, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 95, 149); // cl (w, cp)
+selectCodeEditor("DDS.v", 95, 149, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 95, 164); // cl (w, cp)
+selectCodeEditor("DDS.v", 95, 164, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 96, 178); // cl (w, cp)
+selectCodeEditor("DDS.v", 96, 178, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 96, 191); // cl (w, cp)
+selectCodeEditor("DDS.v", 96, 191, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 113, 245); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 82, 216); // cl (w, cp)
+// Elapsed time: 53 seconds
+selectCodeEditor("DDS.v", 214, 106); // cl (w, cp)
+selectCodeEditor("DDS.v", 210, 106); // cl (w, cp)
+selectCodeEditor("DDS.v", 142, 105); // cl (w, cp)
+selectCodeEditor("DDS.v", 279, 243); // cl (w, cp)
+selectCodeEditor("DDS.v", 142, 201); // cl (w, cp)
+selectCodeEditor("DDS.v", 146, 177); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("DDS.v", 142, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 347, 206); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("DDS.v", 146, 189); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("DDS.v", 199, 206); // cl (w, cp)
+selectCodeEditor("DDS.v", 143, 172); // cl (w, cp)
+selectCodeEditor("DDS.v", 142, 163); // cl (w, cp)
+selectCodeEditor("DDS.v", 148, 155); // cl (w, cp)
+selectCodeEditor("DDS.v", 320, 140); // cl (w, cp)
+selectCodeEditor("DDS.v", 269, 125); // cl (w, cp)
+selectCodeEditor("DDS.v", 211, 102); // cl (w, cp)
+selectCodeEditor("DDS.v", 310, 62); // cl (w, cp)
+selectCodeEditor("DDS.v", 151, 124); // cl (w, cp)
+selectCodeEditor("DDS.v", 151, 145); // cl (w, cp)
+selectCodeEditor("DDS.v", 199, 209); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("DDS.v", 52, 255); // cl (w, cp)
+selectCodeEditor("DDS.v", 52, 255, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 50, 484); // cl (w, cp)
+selectCodeEditor("DDS.v", 50, 484, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 61, 307); // cl (w, cp)
+selectCodeEditor("DDS.v", 53, 320); // cl (w, cp)
+selectCodeEditor("DDS.v", 53, 320, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 49, 254); // cl (w, cp)
+selectCodeEditor("DDS.v", 49, 254, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 147, 329); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+selectCodeEditor("DDS.v", 55, 257); // cl (w, cp)
+selectCodeEditor("DDS.v", 54, 257, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 55, 273); // cl (w, cp)
+selectCodeEditor("DDS.v", 55, 273, false, false, false, false, true); // cl (w, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1459 ms.
+// bx (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bx (SwingUtilities.SharedOwnerFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Alliance Partners ;  ;  ;  ; ", 1); // O (Q, cp)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Alliance Partners ;  ;  ;  ; ", 1); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Math Functions ;  ;  ;  ; ", 14); // O (Q, cp)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Math Functions ;  ;  ;  ; ", 14); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Math Functions ;  ;  ;  ; ", 14, "Math Functions", 0, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memories & Storage Elements ;  ;  ;  ; ", 15); // O (Q, cp)
+selectTreeTableHeader(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Name", 0); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memory Interface Generators ;  ;  ;  ; ", 18); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memory Interface Generator (MIG 7 Series) ; AXI4 ; Production ; Included ; xilinx.com:ip:mig_7series:4.2", 19, "Memory Interface Generator (MIG 7 Series)", 0, true); // O (Q, cp) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Memory Interface Generator (MIG 7 Series) ; AXI4 ; Production ; Included ; xilinx.com:ip:mig_7series:4.2", 19, "Memory Interface Generator (MIG 7 Series)", 0, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// j (cp):  Customize IP : addNotify
+// h (cp): Memory Interface Generator: addNotify
+// HOptionPane Warning: 'Are you sure you want to quit? (Quit Confirmation)'
+// 'i' command handler elapsed time: 13 seconds
+// Elapsed time: 13 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (C, J)
+dismissDialog("Memory Interface Generator"); // h (cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAMs & ROMs ;  ;  ;  ; ", 20); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAMs & ROMs & BRAM ;  ;  ;  ; ", 22, "RAMs & ROMs & BRAM", 0, true); // O (Q, cp) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAMs & ROMs & BRAM ;  ;  ;  ; ", 22); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "RAMs & ROMs & BRAM ;  ;  ;  ; ", 22, "RAMs & ROMs & BRAM", 0, false, false, false, false, false, true); // O (Q, cp) - Double Click
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 23, "8.4", 1, true); // O (Q, cp) - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 23); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 23, "8.4", 1, true, false, false, false, false, true); // O (Q, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cp):  Customize IP : addNotify
+// r (cp): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2500 ms.
+dismissDialog("Customize IP"); // l (cp)
+dismissDialog("Customize IP"); // r (cp)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clk"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "6.0", 1, false); // O (Q, cp)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6); // O (Q, cp)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "6.0", 1, false, false, false, false, false, true); // O (Q, cp) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "6.0", 1, false); // O (Q, cp)
+// l (cp):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cp): Customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1849 ms.
+dismissDialog("Customize IP"); // l (cp)
+setText("PRIM IN FREQ", "125.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+setText("CLKOUT1 REQUESTED OUT FREQ", "5.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cT (C, r)
+// [GUI Memory]: 131 MB (+41kb) [01:09:08]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Customize IP"); // r (cp)
+// TclEventType: CREATE_IP_CORE
+// bx (cp):  Customize IP : addNotify
+// Tcl Message: create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.PRIM_IN_FREQ {125.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {5.000} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {25.500} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {127.500} CONFIG.CLKOUT1_JITTER {529.616} CONFIG.CLKOUT1_PHASE_ERROR {319.966}] [get_ips clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// [GUI Memory]: 144 MB (+6240kb) [01:09:13]
+// Tcl Message: generate_target all [get_files  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clk_wiz_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 4 clk_wiz_0_synth_1 
+// Tcl Message: [Sat Aug  1 04:03:17 2020] Launched clk_wiz_0_synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/clk_wiz_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DDS.v", 1); // k (j, cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 38 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("DDS.v", 22, 403); // cl (w, cp)
+selectCodeEditor("DDS.v", 12, 430); // cl (w, cp)
+selectCodeEditor("DDS.v", 18, 427, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 187, 462); // cl (w, cp)
+selectCodeEditor("DDS.v", 76, 462); // cl (w, cp)
+selectCodeEditor("DDS.v", 140, 413); // cl (w, cp)
+selectCodeEditor("DDS.v", 87, 505); // cl (w, cp)
+selectCodeEditor("DDS.v", 87, 505, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 77, 515); // cl (w, cp)
+selectCodeEditor("DDS.v", 80, 501); // cl (w, cp)
+selectCodeEditor("DDS.v", 115, 463); // cl (w, cp)
+selectCodeEditor("DDS.v", 225, 319); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 78 MB. Current time: 8/1/20, 4:04:54 AM CST
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, J)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Aug  1 04:04:59 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 04:04:59 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'smg' not found [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:297]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\fan\Desktop\summer_school\wave\wave.srcs\sources_1\new\DDS.v;-;;-;16;-;line;-;297;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6156] failed synthesizing module 'DDS' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:23]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\fan\Desktop\summer_school\wave\wave.srcs\sources_1\new\DDS.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6156] failed synthesizing module 'DDS' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:23]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\fan\Desktop\summer_school\wave\wave.srcs\sources_1\new\DDS.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'smg' not found [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:297]. ]", 2, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\fan\Desktop\summer_school\wave\wave.srcs\sources_1\new\DDS.v;-;;-;16;-;line;-;297;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("DDS.v", 122, 154); // cl (w, cp)
+selectCodeEditor("DDS.v", 122, 154, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 35, 200); // cl (w, cp)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// Elapsed time: 21 seconds
+setFileChooser("C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Aug  1 04:06:32 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 04:06:32 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 113 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 6, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 7, false); // ah (Q, cp)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("DDS.v", 50, 261); // cl (w, cp)
+selectCodeEditor("DDS.v", 50, 261, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 89, 211); // cl (w, cp)
+selectCodeEditor("DDS.v", 152, 172); // cl (w, cp)
+selectCodeEditor("DDS.v", 65, 121, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("DDS.v", 4, 262); // cl (w, cp)
+selectCodeEditor("DDS.v", 10, 296); // cl (w, cp)
+selectCodeEditor("DDS.v", 3, 317); // cl (w, cp)
+selectCodeEditor("DDS.v", 6, 327, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 96, 392); // cl (w, cp)
+selectCodeEditor("DDS.v", 96, 392, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 90, 369); // cl (w, cp)
+selectCodeEditor("DDS.v", 90, 369, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 102, 119); // cl (w, cp)
+selectCodeEditor("DDS.v", 24, 120, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 16, 196); // cl (w, cp)
+selectCodeEditor("DDS.v", 11, 242); // cl (w, cp)
+selectCodeEditor("DDS.v", 11, 242, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 173, 206); // cl (w, cp)
+selectCodeEditor("DDS.v", 172, 216); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 04:09:40 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 04:09:40 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Implementation Failed: addNotify
+// Elapsed time: 115 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module Sin has unconnected pin wea[0]. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module Sin has unconnected pin wea[0]. , [Synth 8-4442] BlackBox module Sin has unconnected pin dina[10]. ]", 4, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module Sin has unconnected pin wea[0]. ]", 2); // ah (Q, cp)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aR, cp): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 4, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (3) is greater than number of available sites (0).. The following are banks with available pins: .  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 3 sites.. 	Term: dio. 	Term:  rclk. 	Term:  and sclk. . . ]", 2, true); // ah (Q, cp) - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("DDS.v", 52, 70); // cl (w, cp)
+selectCodeEditor("DDS.v", 52, 70, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 50, 78); // cl (w, cp)
+selectCodeEditor("DDS.v", 50, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 48, 107); // cl (w, cp)
+selectCodeEditor("DDS.v", 48, 107, false, false, false, false, true); // cl (w, cp) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, pin.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, pin.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, pin.xdc]", 6, false); // B (D, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("pin.xdc", 721, 385); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DDS.v", 1); // k (j, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 154, 237); // cl (w, cp)
+selectCodeEditor("DDS.v", 106, 196); // cl (w, cp)
+selectCodeEditor("DDS.v", 218, 129); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 46, 202); // cl (w, cp)
+selectCodeEditor("DDS.v", 46, 202, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 119, 193); // cl (w, cp)
+selectCodeEditor("DDS.v", 111, 197); // cl (w, cp)
+selectCodeEditor("DDS.v", 111, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 91, 229); // cl (w, cp)
+selectCodeEditor("DDS.v", 91, 229, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 81, 220); // cl (w, cp)
+selectCodeEditor("DDS.v", 81, 220, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 101, 197); // cl (w, cp)
+selectCodeEditor("DDS.v", 101, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Aug  1 04:13:28 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 04:13:28 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 212 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3095.242 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279573128A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [GUI Memory]: 153 MB (+1909kb) [01:23:13]
+dismissDialog("Auto Connect"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 108 seconds
+selectCodeEditor("DDS.v", 29, 183); // cl (w, cp)
+selectCodeEditor("DDS.v", 23, 180); // cl (w, cp)
+selectCodeEditor("DDS.v", 264, 138); // cl (w, cp)
+selectCodeEditor("DDS.v", 176, 139); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab((HResource) null, (HResource) null, "Serial I/O Links", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Serial I/O Scans", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Serial I/O Links", 2); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aF, cp)
+selectCodeEditor("DDS.v", 269, 231); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 66, 291); // cl (w, cp)
+selectCodeEditor("DDS.v", 22, 286); // cl (w, cp)
+selectCodeEditor("DDS.v", 14, 268); // cl (w, cp)
+selectCodeEditor("DDS.v", 20, 256); // cl (w, cp)
+selectCodeEditor("DDS.v", 2, 257); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 215, 395); // cl (w, cp)
+selectCodeEditor("DDS.v", 155, 331); // cl (w, cp)
+selectCodeEditor("DDS.v", 155, 331, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 129, 386); // cl (w, cp)
+selectCodeEditor("DDS.v", 181, 314); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 15 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Aug  1 04:20:36 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 04:20:36 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 263 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (cp): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (cp)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (C, I)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 132 seconds
+selectCodeEditor("DDS.v", 206, 365); // cl (w, cp)
+selectCodeEditor("DDS.v", 206, 365, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279573128A 
+// n (cp): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1897 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 84 MB. Current time: 8/1/20, 4:34:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 80 MB. Current time: 8/1/20, 5:04:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 5:34:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 6:04:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 80 MB. Current time: 8/1/20, 6:34:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 7:04:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 7:34:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 8:04:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 79 MB. Current time: 8/1/20, 8:34:56 AM CST
+// Elapsed time: 16403 seconds
+dismissDialog("Close Hardware Target"); // n (cp)
+// Elapsed time: 60 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aF, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+String[] filenames31467 = {"C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_display.v", "C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_driver.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_display.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_driver.v} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_display.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_display.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_display.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("vga_display.v", 23, 1); // cl (w, cp)
+selectCodeEditor("vga_display.v", 28, 87); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_display.v", 263, 129); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_driver.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_driver.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, vga_driver.v]", 2, false); // B (D, cp)
+selectCodeEditor("vga_driver.v", 23, 7); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 20, 94); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_driver.v", 105, 145); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 99, 296); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 206, 85); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_driver.v", 297, 187); // cl (w, cp)
+typeControlKey((HResource) null, "vga_driver.v", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 4); // k (j, cp)
+selectCodeEditor("vga_display.v", 221, 259); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_display.v", 40, 22); // cl (w, cp)
+typeControlKey((HResource) null, "vga_display.v", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_display.v", 71, 201); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), Sin : Sin (Sin.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), Sin : Sin (Sin.xci)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1, true); // B (D, cp) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template]", 2, true); // B (D, cp) - Node
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1020 ms.
+dismissDialog("Re-customize IP"); // O (cp)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (C, r)
+selectCheckBox((HResource) null, "clk_out2", true); // g (bL, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "25.000"); // z (cU)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cp): Re-customize IP: addNotify
+// TclEventType: FILE_SET_CHANGE
+// bx (r):  Re-customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {25.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {125.000} CONFIG.MMCM_CLKOUT1_DIVIDE {25} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {249.501} CONFIG.CLKOUT1_PHASE_ERROR {122.096} CONFIG.CLKOUT2_JITTER {181.315} CONFIG.CLKOUT2_PHASE_ERROR {122.096}] [get_ips clk_wiz_0] 
+// [GUI Memory]: 162 MB (+1858kb) [06:09:48]
+// aI (cp): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bx (r)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (cp):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all clk_wiz_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run clk_wiz_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 4 clk_wiz_0_synth_1 
+// Tcl Message: [Sat Aug  1 09:03:54 2020] Launched clk_wiz_0_synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/clk_wiz_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 22 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (C, I)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 1); // B (D, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cp)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template, clk_wiz_0.veo]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template, clk_wiz_0.veo]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0, Instantiation Template, clk_wiz_0.veo]", 3, false); // B (D, cp)
+selectCodeEditor("clk_wiz_0.veo", 25, 158); // D (w, cp)
+typeControlKey((HResource) null, "clk_wiz_0.veo", 'c'); // D (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_driver.v", 5); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DDS.v", 1); // k (j, cp)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 31, 120); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 93 MB. Current time: 8/1/20, 9:04:56 AM CST
+// Elapsed time: 14 seconds
+selectCodeEditor("DDS.v", 149, 118); // cl (w, cp)
+selectCodeEditor("DDS.v", 227, 126); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 114, 147); // cl (w, cp)
+selectCodeEditor("DDS.v", 114, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 115, 142); // cl (w, cp)
+selectCodeEditor("DDS.v", 110, 141); // cl (w, cp)
+selectCodeEditor("DDS.v", 110, 141); // cl (w, cp)
+selectCodeEditor("DDS.v", 169, 91); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 115, 169); // cl (w, cp)
+selectCodeEditor("DDS.v", 107, 147); // cl (w, cp)
+selectCodeEditor("DDS.v", 107, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 86, 64); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 114, 128); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 57, 86); // cl (w, cp)
+selectCodeEditor("DDS.v", 57, 86, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 1, 279); // cl (w, cp)
+selectCodeEditor("DDS.v", 21, 242); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("DDS.v", 5, 253); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 54, 129); // cl (w, cp)
+selectCodeEditor("DDS.v", 54, 129, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("DDS.v", 49, 222); // cl (w, cp)
+selectCodeEditor("DDS.v", 99, 212); // cl (w, cp)
+selectCodeEditor("DDS.v", 99, 212, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 147, 141); // cl (w, cp)
+selectCodeEditor("DDS.v", 147, 141, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 155, 122); // cl (w, cp)
+selectCodeEditor("DDS.v", 155, 123, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 167, 139); // cl (w, cp)
+selectCodeEditor("DDS.v", 125, 141); // cl (w, cp)
+selectCodeEditor("DDS.v", 126, 144); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'c'); // cl (w, cp)
+selectCodeEditor("DDS.v", 148, 166); // cl (w, cp)
+selectCodeEditor("DDS.v", 148, 166, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 247, 149); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("DDS.v", 7, 71); // cl (w, cp)
+selectCodeEditor("DDS.v", 112, 37); // cl (w, cp)
+selectCodeEditor("DDS.v", 7, 181); // cl (w, cp)
+selectCodeEditor("DDS.v", 108, 138); // cl (w, cp)
+selectCodeEditor("DDS.v", 75, 100); // cl (w, cp)
+typeControlKey((HResource) null, "DDS.v", 'v'); // cl (w, cp)
+selectCodeEditor("DDS.v", 22, 125); // cl (w, cp)
+selectCodeEditor("DDS.v", 23, 142); // cl (w, cp)
+selectCodeEditor("DDS.v", 24, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 45, 162); // cl (w, cp)
+selectCodeEditor("DDS.v", 206, 125); // cl (w, cp)
+selectCodeEditor("DDS.v", 208, 143); // cl (w, cp)
+selectCodeEditor("DDS.v", 207, 163); // cl (w, cp)
+selectCodeEditor("DDS.v", 177, 199); // cl (w, cp)
+selectCodeEditor("DDS.v", 145, 157); // cl (w, cp)
+selectCodeEditor("DDS.v", 139, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 148, 125); // cl (w, cp)
+selectCodeEditor("DDS.v", 57, 158); // cl (w, cp)
+selectCodeEditor("DDS.v", 121, 226); // cl (w, cp)
+selectCodeEditor("DDS.v", 55, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 101, 236); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 74, 241); // cl (w, cp)
+selectCodeEditor("DDS.v", 108, 165); // cl (w, cp)
+selectCodeEditor("DDS.v", 108, 165, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 111, 120); // cl (w, cp)
+selectCodeEditor("DDS.v", 111, 119, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 119, 147); // cl (w, cp)
+selectCodeEditor("DDS.v", 119, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 117, 161); // cl (w, cp)
+selectCodeEditor("DDS.v", 117, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 193, 217); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectCodeEditor("DDS.v", 4, 104); // cl (w, cp)
+selectCodeEditor("DDS.v", 5, 128); // cl (w, cp)
+selectCodeEditor("DDS.v", 5, 132, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // af (al, Popup.HeavyWeightWindow)
+selectCodeEditor("DDS.v", 123, 125); // cl (w, cp)
+selectCodeEditor("DDS.v", 123, 125, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 122, 147); // cl (w, cp)
+selectCodeEditor("DDS.v", 122, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 130, 161); // cl (w, cp)
+selectCodeEditor("DDS.v", 130, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 133, 122); // cl (w, cp)
+selectCodeEditor("DDS.v", 133, 122, false, false, false, false, true); // cl (w, cp) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_driver : vga_driver (vga_driver.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_driver : vga_driver (vga_driver.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_driver : vga_driver (vga_driver.v)]", 10, false); // B (D, cp)
+selectCodeEditor("vga_driver.v", 73, 176); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 73, 176, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_driver.v", 75, 207); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 75, 207, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_driver.v", 151, 163); // cl (w, cp)
+selectCodeEditor("vga_driver.v", 151, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_display.v", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pin.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_driver.v", 5); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_display : vga_display (vga_display.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_display : vga_display (vga_display.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_display : vga_display (vga_display.v)]", 11, false); // B (D, cp)
+selectCodeEditor("vga_display.v", 155, 29); // cl (w, cp)
+selectCodeEditor("vga_display.v", 155, 29, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 164, 54); // cl (w, cp)
+selectCodeEditor("vga_display.v", 164, 54, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 183, 89); // cl (w, cp)
+selectCodeEditor("vga_display.v", 183, 89, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 177, 102); // cl (w, cp)
+selectCodeEditor("vga_display.v", 177, 102, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 168, 119); // cl (w, cp)
+selectCodeEditor("vga_display.v", 168, 119, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 78, 144); // cl (w, cp)
+selectCodeEditor("vga_display.v", 78, 144, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 77, 161); // cl (w, cp)
+selectCodeEditor("vga_display.v", 77, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 75, 184); // cl (w, cp)
+selectCodeEditor("vga_display.v", 75, 184, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 82, 203); // cl (w, cp)
+selectCodeEditor("vga_display.v", 82, 203, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 72, 162); // cl (w, cp)
+selectCodeEditor("vga_display.v", 72, 161, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 73, 177); // cl (w, cp)
+selectCodeEditor("vga_display.v", 73, 177, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("vga_display.v", 73, 191); // cl (w, cp)
+selectCodeEditor("vga_display.v", 73, 191, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 1172 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_driver : vga_driver (vga_driver.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_driver : vga_driver (vga_driver.v)]", 10, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_driver.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_driver.v 
+// Tcl Message: file delete -force C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_driver.v 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_display : vga_display (vga_display.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DDS (DDS.v), u_vga_display : vga_display (vga_display.v)]", 11, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // af (al, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cp): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cp)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_display.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_display.v 
+// Tcl Message: file delete -force C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/vga_display.v 
+selectCodeEditor("clk_wiz_0.veo", 67, 282); // D (w, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DDS.v", 1); // k (j, cp)
+selectCodeEditor("DDS.v", 62, 241); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("DDS.v", 254, 173); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 211, 238); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("DDS.v", 240, 81); // cl (w, cp)
+selectCodeEditor("DDS.v", 247, 144); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("DDS.v", 295, 149); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DDS.v", 119, 71); // cl (w, cp)
+selectCodeEditor("DDS.v", 119, 71, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("DDS.v", 332, 253); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,785 MB. GUI used memory: 94 MB. Current time: 8/1/20, 9:34:57 AM CST
+// Elapsed time: 1069 seconds
+selectCodeEditor("DDS.v", 180, 101); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Aug  1 09:48:58 2020] Launched synth_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log [Sat Aug  1 09:48:59 2020] Launched impl_1... Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 174 seconds
+selectCodeEditor("DDS.v", 127, 160); // cl (w, cp)
+selectCodeEditor("DDS.v", 70, 281); // cl (w, cp)
+selectCodeEditor("DDS.v", 70, 281, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("DDS.v", 106, 120); // cl (w, cp)
+selectCodeEditor("DDS.v", 106, 120, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 27 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cp)
+// aS (cp): Cancel Implementation: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aS)
+dismissDialog("Cancel Implementation"); // aS (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1049 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  7513 ms.

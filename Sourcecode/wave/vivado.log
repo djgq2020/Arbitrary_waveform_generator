@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 20:18:48 2020
+# Process ID: 9768
+# Current directory: C:/Users/fan/Desktop/summer_school/wave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9648 C:\Users\fan\Desktop\summer_school\wave\wave.xpr
+# Log file: C:/Users/fan/Desktop/summer_school/wave/vivado.log
+# Journal file: C:/Users/fan/Desktop/summer_school/wave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fan/Desktop/summer_school/wave/wave.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 805.781 ; gain = 208.480
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279573128A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1765.180 ; gain = 527.121
+set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 20:24:45 2020...

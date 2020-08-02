@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Square_synth_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/Square_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Triangle_synth_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/Triangle_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sin_synth_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/Sin_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="sawtooth_synth_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/sawtooth_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Square_synth_1"/>
+		<Parent Id="Triangle_synth_1"/>
+		<Parent Id="Sin_synth_1"/>
+		<Parent Id="sawtooth_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="Square_synth_1"/>
+		<Parent Id="Triangle_synth_1"/>
+		<Parent Id="Sin_synth_1"/>
+		<Parent Id="sawtooth_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

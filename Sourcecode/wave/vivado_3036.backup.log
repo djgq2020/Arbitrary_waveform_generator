@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 09:54:20 2020
+# Process ID: 3036
+# Current directory: C:/Users/fan/Desktop/summer_school/wave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10676 C:\Users\fan\Desktop\summer_school\wave\wave.xpr
+# Log file: C:/Users/fan/Desktop/summer_school/wave/vivado.log
+# Journal file: C:/Users/fan/Desktop/summer_school/wave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fan/Desktop/summer_school/wave/wave.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 737.242 ; gain = 155.594
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279573128A
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2080.801 ; gain = 937.344
+set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/DDS.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+set_property  ip_repo_paths  C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi'.
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+couldn't read file "c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi/xgui/rgb2dvi_v1_4.tcl": no such file or directory
+WARNING: [IP_Flow 19-3303] Errors found in sourcing XGUI file 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi/xgui/rgb2dvi_v1_4.tcl'. couldn't read file "c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi/xgui/rgb2dvi_v1_4.tcl": no such file or directory
+ERROR: [IP_Flow 19-3428] Failed to create Customization object rgb2dvi_0
+CRITICAL WARNING: [IP_Flow 19-973] Failed to create IP instance 'rgb2dvi_0'. Error during customization.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi_0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi_0'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi'.
+add_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+WARNING: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'RGB to DVI Video Encoder (Source) (1.3)' for IP 'rgb2dvi_0' (customized with software release 2017.4) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects  [get_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv digilentinc.com:ip:rgb2dvi:1.4 [get_ips  rgb2dvi_0] -log ip_upgrade.log
+Upgrading 'rgb2dvi_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'kClkPrimitive' from 'PLL' to 'MMCM' has been ignored for IP 'rgb2dvi_0'
+WARNING: [IP_Flow 19-3501] Upgraded rgb2dvi_0 from RGB to DVI Video Encoder (Source) 1.3 to RGB to DVI Video Encoder (Source) 1.4, with warnings. Please review the message log.
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'TMDS_Clk_n' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'TMDS_Clk_p' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'rgb2dvi_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'oen'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'rgb2dvi_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'rgb2dvi_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/fan/Desktop/summer_school/wave/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/fan/Desktop/summer_school/wave/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips rgb2dvi_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Sat Aug  1 10:10:03 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -directory C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files -ipstatic_source_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset rgb2dvi_0 C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+INFO: [Project 1-386] Moving file 'C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' from fileset 'rgb2dvi_0' to fileset 'sources_1'.
+file delete -force C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  {C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/dpram2048x8 C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi_0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/dpram2048x8'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ip/rgb2dvi_0'.
+add_files {C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci}
+WARNING: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'rgb2dvi (1.3)' for IP 'rgb2dvi_0' (customized with software release 2017.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects  [get_files  {C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/dpram2048x8/dpram2048x8.xci C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci}] -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+file delete -force C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/fan/Desktop/summer_school/wave/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/ip'.
+add_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+export_ip_user_files -of_objects  [get_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/color_bar.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/timing_gen_xy.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/wav_display.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/ad_sample.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/grid_display.v C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/video_define.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name video_pll -dir c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {video_pll} CONFIG.PRIM_IN_FREQ {125.000} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {74.25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {371.25} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_DIVCLK_DIVIDE {7} CONFIG.MMCM_CLKFBOUT_MULT_F {62.375} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.000} CONFIG.MMCM_CLKOUT1_DIVIDE {3} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {239.766} CONFIG.CLKOUT1_PHASE_ERROR {368.066} CONFIG.CLKOUT2_JITTER {192.979} CONFIG.CLKOUT2_PHASE_ERROR {368.066}] [get_ips video_pll]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'video_pll' to 'video_pll' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+generate_target all [get_files  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'video_pll'...
+catch { config_ip_cache -export [get_ips -all video_pll] }
+export_ip_user_files -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll.xci]
+launch_runs -jobs 4 video_pll_synth_1
+[Sat Aug  1 10:34:59 2020] Launched video_pll_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/video_pll_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll.xci] -directory C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files -ipstatic_source_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dpram2048x8'...
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+[Sat Aug  1 10:46:05 2020] Launched dpram2048x8_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/dpram2048x8_synth_1/runme.log
+[Sat Aug  1 10:46:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1
+
+reset_run dpram2048x8_synth_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+[Sat Aug  1 10:50:35 2020] Launched dpram2048x8_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/dpram2048x8_synth_1/runme.log
+[Sat Aug  1 10:50:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1
+
+reset_run dpram2048x8_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {24.125} CONFIG.MMCM_CLKOUT0_DIVIDE_F {120.625} CONFIG.MMCM_CLKOUT1_DIVIDE {12} CONFIG.CLKOUT1_JITTER {548.120} CONFIG.CLKOUT1_PHASE_ERROR {333.440} CONFIG.CLKOUT2_JITTER {358.572} CONFIG.CLKOUT2_PHASE_ERROR {333.440}] [get_ips clk_wiz_0]
+generate_target all [get_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/clk_wiz_0_synth_1
+
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Sat Aug  1 10:51:06 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files -ipstatic_source_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+[Sat Aug  1 10:51:43 2020] Launched clk_wiz_0_synth_1, dpram2048x8_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/clk_wiz_0_synth_1/runme.log
+dpram2048x8_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/dpram2048x8_synth_1/runme.log
+synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log
+[Sat Aug  1 10:51:44 2020] Launched impl_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci' is already up-to-date
+[Sat Aug  1 11:06:52 2020] Launched synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log
+[Sat Aug  1 11:06:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -reset -force -quiet
+remove_files  C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+remove_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3872.336 ; gain = 456.871
+file delete -force C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0
+create_ip -name rgb2dvi -vendor digilentinc.com -library ip -version 1.3 -module_name rgb2dvi_0 -dir c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+generate_target all [get_files  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Sat Aug  1 11:14:17 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -directory C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files -ipstatic_source_dir C:/Users/fan/Desktop/summer_school/wave/wave.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/modelsim} {questa=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/questa} {riviera=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/riviera} {activehdl=C:/Users/fan/Desktop/summer_school/wave/wave.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Aug  1 11:16:09 2020] Launched rgb2dvi_0_synth_1, synth_1...
+Run output will be captured here:
+rgb2dvi_0_synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/rgb2dvi_0_synth_1/runme.log
+synth_1: C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/runme.log
+[Sat Aug  1 11:16:10 2020] Launched impl_1...
+Run output will be captured here: C:/Users/fan/Desktop/summer_school/wave/wave.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 11:25:01 2020...

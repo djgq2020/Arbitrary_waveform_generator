@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 20:09:42 2020
+# Process ID: 4332
+# Current directory: C:/Users/fan/Desktop/summer_school/wave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9184 C:\Users\fan\Desktop\summer_school\wave\wave.xpr
+# Log file: C:/Users/fan/Desktop/summer_school/wave/vivado.log
+# Journal file: C:/Users/fan/Desktop/summer_school/wave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fan/Desktop/summer_school/wave/wave.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 767.816 ; gain = 187.379
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 20:12:26 2020...

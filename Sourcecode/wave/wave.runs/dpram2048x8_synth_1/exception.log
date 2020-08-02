@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\fan\Desktop\summer_school\wave\wave.runs\dpram2048x8_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

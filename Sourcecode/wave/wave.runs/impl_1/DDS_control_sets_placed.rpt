@@ -1,0 +1,164 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 18:23:35 2020
+| Host         : DESKTOP-OS30GQN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DDS_control_sets_placed.rpt
+| Design       : DDS
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    95 |
+| Unused register locations in slices containing registers |   587 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           80 |
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            7 |
+|     12 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |           11 |
+| No           | No                    | Yes                    |             175 |           80 |
+| No           | Yes                   | No                     |              24 |           24 |
+| Yes          | No                    | No                     |              64 |           32 |
+| Yes          | No                    | Yes                    |              96 |           42 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|          Clock Signal          |           Enable Signal          |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[11]_LDC_i_1_n_0 |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[0]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[10]_LDC_i_1_n_0 |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[8]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data0_reg[8]_LDC_i_1_n_0   |                                  | da_data0_reg[8]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[10]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[9]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[11]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data00_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[8]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[9]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              |                                  | da_data0_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[5]_LDC_i_1_n_0   |                                  | da_data0_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[7]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[5]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[2]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[6]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[4]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[1]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[0]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_bits[3]_i_1_n_0  | rst_n_IBUF                    |                1 |              1 |
+|  da_data0_reg[7]_LDC_i_1_n_0   |                                  | da_data0_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[3]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[11]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[1]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[2]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[10]_LDC_i_1_n_0  |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[0]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[4]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[6]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[9]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[8]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[5]_LDC_i_1_n_0   |                1 |              1 |
+|  da_clk_IBUF_BUFG              | da_data0[11]_P_i_1_n_0           | da_data0_reg[7]_LDC_i_1_n_0   |                1 |              1 |
+|  da_data00_reg[11]_LDC_i_1_n_0 |                                  | da_data00_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  da_data00_reg[1]_LDC_i_1_n_0  |                                  | da_data00_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[0]_LDC_i_1_n_0  |                                  | da_data00_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[10]_LDC_i_1_n_0 |                                  | da_data00_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  da_data00_reg[2]_LDC_i_1_n_0  |                                  | da_data00_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[3]_LDC_i_1_n_0  |                                  | da_data00_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[4]_LDC_i_1_n_0  |                                  | da_data00_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[5]_LDC_i_1_n_0  |                                  | da_data00_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[6]_LDC_i_1_n_0  |                                  | da_data00_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[7]_LDC_i_1_n_0  |                                  | da_data00_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data00_reg[8]_LDC_i_1_n_0  |                                  | da_data00_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data0_reg[11]_LDC_i_1_n_0  |                                  | da_data0_reg[11]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data0_reg[1]_LDC_i_1_n_0   |                                  | da_data0_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[2]_LDC_i_1_n_0   |                                  | da_data0_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[10]_LDC_i_1_n_0  |                                  | da_data0_reg[10]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data0_reg[0]_LDC_i_1_n_0   |                                  | da_data0_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[3]_LDC_i_1_n_0   |                                  | da_data0_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[4]_LDC_i_1_n_0   |                                  | da_data0_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data00_reg[9]_LDC_i_1_n_0  |                                  | da_data00_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  da_data0_reg[6]_LDC_i_1_n_0   |                                  | da_data0_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+|  da_data0_reg[9]_LDC_i_1_n_0   |                                  | da_data0_reg[9]_LDC_i_2_n_0   |                1 |              1 |
+|  video_pll_m0/inst/clk_out1    |                                  |                               |                1 |              2 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/state_reg[0][0]     | rst_n_IBUF                    |                1 |              4 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/E[0]                |                               |                3 |              8 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_cnt_reg[1][0]    |                               |                3 |              8 |
+|  da_clk_IBUF_BUFG              | uart_tx_inst/tx_data_latch0      | rst_n_IBUF                    |                3 |              8 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_data_valid01_out | rst_n_IBUF                    |                1 |              8 |
+|  da_clk_IBUF_BUFG              | tx_data[7]_i_1_n_0               | rst_n_IBUF                    |                7 |              8 |
+|  instance_name/inst/clk_out1   | smg/cnt_s[7]_i_1_n_0             | rst_n_IBUF                    |                2 |              8 |
+|  instance_name/inst/clk_out1   | smg/cnt_s2[7]_i_1_n_0            | rst_n_IBUF                    |                1 |              8 |
+|  da_clk_IBUF_BUFG              |                                  |                               |               10 |             12 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_cnt_reg[2][0]    |                               |                4 |             16 |
+|  da_clk_IBUF_BUFG              | uart_rx_inst/rx_cnt_reg[3][0]    |                               |               22 |             32 |
+|  da_clk_IBUF_BUFG              | wait_cnt[31]_i_1__0_n_0          | rst_n_IBUF                    |                7 |             32 |
+|  instance_name/inst/clk_out1   |                                  | rst_n_IBUF                    |               15 |             50 |
+|  da_clk_IBUF_BUFG              |                                  | rst_n_IBUF                    |               29 |             89 |
++--------------------------------+----------------------------------+-------------------------------+------------------+----------------+
+
+

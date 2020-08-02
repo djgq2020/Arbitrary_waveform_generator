@@ -1,0 +1,1057 @@
+
+*** Running vivado
+    with args -log DDS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DDS.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source DDS.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fan/Desktop/summer_school/wave/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top DDS -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1584 
+WARNING: [Synth 8-2611] redeclaration of ansi port dio is not allowed [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port rclk is not allowed [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port sclk is not allowed [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port ad_clk is not allowed [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port da_data is not allowed [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:45]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 487.477 ; gain = 113.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DDS' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:23]
+	Parameter CLK_FRE bound to: 125 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SEND bound to: 1 - type: integer 
+	Parameter WAIT bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Sin' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Sin' (1#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Sin_stub.v:6]
+WARNING: [Synth 8-350] instance 'Sin' of module 'Sin' requires 5 connections, but only 3 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:91]
+INFO: [Synth 8-6157] synthesizing module 'Square' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Square_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Square' (2#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Square_stub.v:6]
+WARNING: [Synth 8-350] instance 'Square' of module 'Square' requires 5 connections, but only 3 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:96]
+INFO: [Synth 8-6157] synthesizing module 'Triangle' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Triangle_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Triangle' (3#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/Triangle_stub.v:6]
+WARNING: [Synth 8-350] instance 'Triangle' of module 'Triangle' requires 5 connections, but only 3 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:101]
+INFO: [Synth 8-6157] synthesizing module 'sawtooth' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/sawtooth_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sawtooth' (4#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/sawtooth_stub.v:6]
+WARNING: [Synth 8-350] instance 'sawtooth' of module 'sawtooth' requires 5 connections, but only 3 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:106]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/uart_rx.v:1]
+	Parameter CLK_FRE bound to: 125 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 1085 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_REC_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+	Parameter S_DATA bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (5#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK_FRE bound to: 125 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter CYCLE bound to: 1085 - type: integer 
+	Parameter S_IDLE bound to: 1 - type: integer 
+	Parameter S_START bound to: 2 - type: integer 
+	Parameter S_SEND_BYTE bound to: 3 - type: integer 
+	Parameter S_STOP bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (6#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'instance_name' of module 'clk_wiz_0' requires 5 connections, but only 4 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:294]
+INFO: [Synth 8-6157] synthesizing module 'smg' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'smg' (8#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/smg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (9#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/video_pll_stub.v:5]
+WARNING: [Synth 8-350] instance 'video_pll_m0' of module 'video_pll' requires 5 connections, but only 4 given [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:365]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi_0' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:73]
+	Parameter kGenerateSerialClk bound to: 0 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kClkRange bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rgb2dvi' declared at 'c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:61' bound to instance 'U0' of component 'rgb2dvi' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:91]
+	Parameter kGenerateSerialClk bound to: 0 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (10#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (11#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (12#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (13#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (14#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi_0' (15#1) [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:73]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/color_bar.v:3]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (16#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/color_bar.v:3]
+INFO: [Synth 8-6157] synthesizing module 'grid_display' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/grid_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/timing_gen_xy.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (17#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/timing_gen_xy.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'grid_display' (18#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/grid_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ad_sample' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/ad_sample.v:2]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/ad_sample.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_sample' (19#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/ad_sample.v:2]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad_sample' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:419]
+INFO: [Synth 8-6157] synthesizing module 'wav_display' [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/wav_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (20#1) [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/.Xil/Vivado-5096-DESKTOP-OS30GQN/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wav_display' (21#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/wav_display.v:2]
+WARNING: [Synth 8-3936] Found unconnected internal register 'da_data00_reg' and it is trimmed from '20' to '12' bits. [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:131]
+WARNING: [Synth 8-5788] Register da_data0_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:115]
+WARNING: [Synth 8-5788] Register da_data00_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:131]
+WARNING: [Synth 8-5788] Register frequency_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:203]
+WARNING: [Synth 8-5788] Register phase_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:208]
+WARNING: [Synth 8-5788] Register amplitude_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:213]
+WARNING: [Synth 8-5788] Register waveform_reg in module DDS is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:218]
+WARNING: [Synth 8-3848] Net hdmi_b in module/entity DDS does not have driver. [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:344]
+WARNING: [Synth 8-3848] Net hdmi_g in module/entity DDS does not have driver. [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:343]
+WARNING: [Synth 8-3848] Net hdmi_r in module/entity DDS does not have driver. [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:342]
+INFO: [Synth 8-6155] done synthesizing module 'DDS' (22#1) [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:23]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port SerialClk
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port aRst
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 530.824 ; gain = 156.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[23] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[22] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[21] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[20] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[19] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[18] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[17] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[16] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[15] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[14] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[13] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[12] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[11] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[10] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[9] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[8] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[7] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[6] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[5] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[4] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[3] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[2] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[1] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[0] to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pVDE to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pHSync to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pVSync to constant 0 [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/new/DDS.v:373]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 530.824 ; gain = 156.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 530.824 ; gain = 156.375
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Square/Square/Square_in_context.xdc] for cell 'Square'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Square/Square/Square_in_context.xdc] for cell 'Square'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Triangle/Triangle/Triangle_in_context.xdc] for cell 'Triangle'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Triangle/Triangle/Triangle_in_context.xdc] for cell 'Triangle'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Sin/Sin/Sin_in_context.xdc] for cell 'Sin'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/Sin/Sin/Sin_in_context.xdc] for cell 'Sin'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/sawtooth/sawtooth/sawtooth_in_context.xdc] for cell 'sawtooth'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/sawtooth/sawtooth/sawtooth_in_context.xdc] for cell 'sawtooth'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+WARNING: [Constraints 18-619] A clock with name 'da_clk' already exists, overwriting the previous clock with the same name. [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/dpram2048x8/dpram2048x8/dpram2048x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_0/U0'
+Parsing XDC File [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fan/Desktop/summer_school/wave/wave.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DDS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DDS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DDS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DDS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 883.773 ; gain = 0.000
+Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0/U0'
+Finished Parsing XDC File [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_0/U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 883.773 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 883.773 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Sin' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Square' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Triangle' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'sawtooth' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m0/buffer' at clock pin 'clka' is different from the actual clock period '19.896', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 883.773 ; gain = 509.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 883.773 ; gain = 509.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for da_clk. (constraint file  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for da_clk. (constraint file  c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for rgb2dvi_0/U0. (constraint file  C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Square. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Triangle. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Sin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sawtooth. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m0/buffer. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 883.773 ; gain = 509.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_n" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "cnt_s2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "rclk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "control_token_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad_sample'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "wait_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00001 |                              001
+                 S_START |                            10000 |                              010
+              S_REC_BYTE |                            01000 |                              011
+                  S_STOP |                            00100 |                              100
+                  S_DATA |                            00010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              001
+                 S_START |                             0010 |                              010
+             S_SEND_BYTE |                             0100 |                              011
+                  S_STOP |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                              000
+                S_SAMPLE |                              010 |                              001
+                  S_WAIT |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ad_sample'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 883.773 ; gain = 509.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 23    
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 6     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 19    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 48    
++---Multipliers : 
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 8     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 8     
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 6     
+	  12 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DDS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 19    
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                 6x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module smg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 1     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 1     
+Module timing_gen_xy 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module grid_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+Module ad_sample 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module wav_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "rclk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_n" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [c:/Users/fan/Desktop/summer_school/wave/wave.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP da_data002, operation Mode is: A*(B:0x13).
+DSP Report: operator da_data002 is absorbed into DSP da_data002.
+DSP Report: Generating DSP da_data002, operation Mode is: A*(B:0x12).
+DSP Report: operator da_data002 is absorbed into DSP da_data002.
+DSP Report: Generating DSP da_data002, operation Mode is: A*(B:0x11).
+DSP Report: operator da_data002 is absorbed into DSP da_data002.
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst
+INFO: [Synth 8-3886] merging instance 'smg/time_n_reg[7]' (FDC) to 'smg/time_n_reg[4]'
+INFO: [Synth 8-3886] merging instance 'smg/time_n_reg[6]' (FDC) to 'smg/time_n_reg[4]'
+INFO: [Synth 8-3886] merging instance 'smg/time_n_reg[5]' (FDC) to 'smg/time_n_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (smg/\time_n_reg[4] )
+INFO: [Synth 8-3886] merging instance 'state_reg[3]' (FDCE) to 'state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_0/U0/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_0/U0/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_0/U0/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgb2dvi_0/U0/\DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pC0_2_reg' (FD) to 'rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pC0_1_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgb2dvi_0/U0/\DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'i_73/tx_cnt_reg[3]' (FDCE) to 'i_73/tx_cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_73/tx_cnt_reg[4]' (FDCE) to 'i_73/tx_cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_73/tx_cnt_reg[5]' (FDCE) to 'i_73/tx_cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_73/tx_cnt_reg[6]' (FDCE) to 'i_73/tx_cnt_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_73/\tx_cnt_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_73/rx_cnt_reg[7]' (FDCE) to 'i_73/rx_cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_73/rx_cnt_reg[6]' (FDCE) to 'i_73/rx_cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_73/rx_cnt_reg[5]' (FDCE) to 'i_73/rx_cnt_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_73/\rx_cnt_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 883.773 ; gain = 509.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DDS         | A*(B:0x13)  | 12     | 5      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DDS         | A*(B:0x12)  | 12     | 5      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DDS         | A*(B:0x11)  | 12     | 5      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out1' to pin 'instance_name/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/clk_out2' to pin 'instance_name/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'da_clk'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out2' to pin 'video_pll_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'rgb2dvi_0/U0/SerialClk' to pin 'video_pll_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'rgb2dvi_0/U0/PixelClk' to 'wav_display_m0/i_0/timing_gen_xy_m0/y_cnt_reg[0]/C'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 931.633 ; gain = 557.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1085.574 ; gain = 711.125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pData[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pVDE to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pHSync to constant 0
+WARNING: [Synth 8-3295] tying undriven pin rgb2dvi_0:vid_pVSync to constant 0
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Sin has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Square has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Triangle has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module sawtooth has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|DDS         | wav_display_m0/timing_gen_xy_m0/vs_d0_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|DDS         | wav_display_m0/timing_gen_xy_m0/de_d0_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Sin           |         1|
+|2     |Square        |         1|
+|3     |Triangle      |         1|
+|4     |sawtooth      |         1|
+|5     |clk_wiz_0     |         1|
+|6     |video_pll     |         1|
+|7     |dpram2048x8   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |Sin         |     1|
+|2     |Square      |     1|
+|3     |Triangle    |     1|
+|4     |clk_wiz_0   |     1|
+|5     |dpram2048x8 |     1|
+|6     |sawtooth    |     1|
+|7     |video_pll   |     1|
+|8     |CARRY4      |   915|
+|9     |DSP48E1     |     3|
+|10    |LUT1        |   162|
+|11    |LUT2        |  1253|
+|12    |LUT3        |  1270|
+|13    |LUT4        |   999|
+|14    |LUT5        |   813|
+|15    |LUT6        |  1431|
+|16    |MUXF7       |    30|
+|17    |MUXF8       |     2|
+|18    |OSERDESE2   |     4|
+|19    |OSERDESE2_1 |     4|
+|20    |SRL16E      |     2|
+|21    |FDCE        |   350|
+|22    |FDPE        |    30|
+|23    |FDRE        |   209|
+|24    |FDSE        |    15|
+|25    |LDC         |    24|
+|26    |IBUF        |    10|
+|27    |OBUF        |    19|
+|28    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+----------------+------+
+|      |Instance                               |Module          |Cells |
++------+---------------------------------------+----------------+------+
+|1     |top                                    |                |  7611|
+|2     |  rgb2dvi_0                            |rgb2dvi_0       |   345|
+|3     |    U0                                 |rgb2dvi         |   345|
+|4     |      ClockSerializer                  |OutputSERDES    |     3|
+|5     |      \DataEncoders[0].DataEncoder     |TMDS_Encoder    |   116|
+|6     |      \DataEncoders[0].DataSerializer  |OutputSERDES_1  |     3|
+|7     |      \DataEncoders[1].DataEncoder     |TMDS_Encoder_2  |   107|
+|8     |      \DataEncoders[1].DataSerializer  |OutputSERDES_3  |     3|
+|9     |      \DataEncoders[2].DataEncoder     |TMDS_Encoder_4  |   107|
+|10    |      \DataEncoders[2].DataSerializer  |OutputSERDES_5  |     3|
+|11    |      LockLostReset                    |ResetBridge     |     3|
+|12    |        SyncAsyncx                     |SyncAsync       |     2|
+|13    |  ad_sample_m0                         |ad_sample       |   123|
+|14    |  color_bar_m0                         |color_bar       |    80|
+|15    |  grid_display_m0                      |grid_display    |     2|
+|16    |    timing_gen_xy_m0                   |timing_gen_xy_0 |     2|
+|17    |  smg                                  |smg             |   576|
+|18    |  uart_rx_inst                         |uart_rx         |   105|
+|19    |  uart_tx_inst                         |uart_tx         |    82|
+|20    |  wav_display_m0                       |wav_display     |   103|
+|21    |    timing_gen_xy_m0                   |timing_gen_xy   |    71|
++------+---------------------------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 52 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1093.934 ; gain = 366.535
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1093.934 ; gain = 719.484
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 978 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'DDS' is not ideal for floorplanning, since the cellview 'DDS' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1093.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LDC => LDCE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+167 Infos, 91 Warnings, 52 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 1093.934 ; gain = 730.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1093.934 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fan/Desktop/summer_school/wave/wave.runs/synth_1/DDS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DDS_utilization_synth.rpt -pb DDS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 18:21:31 2020...

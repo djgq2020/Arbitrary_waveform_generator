@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log Triangle.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Triangle.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Triangle.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 320.309 ; gain = 69.422
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Triangle, cache-ID = 4edd509c45f7a193.
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 02:58:46 2020...
